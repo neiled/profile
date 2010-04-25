@@ -40,4 +40,4 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 # Finished adapting your MANPATH environment variable for use with MacPorts.
 
-if [[ -s /Users/Edwards/.rvm/scripts/rvm ]] ; then source /Users/Edwards/.rvm/scripts/rvm ; fi
+if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then source "$HOME/.rvm/scripts/rvm" ; fi
