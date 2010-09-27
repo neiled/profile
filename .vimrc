@@ -37,6 +37,7 @@ nmap <leader>l :set list!<CR>
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 
+map <F2> :NERDTreeToggle<CR>
 
 filetype off
 call pathogen#runtime_append_all_bundles()
