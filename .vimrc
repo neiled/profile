@@ -37,6 +37,15 @@ nmap <leader>l :set list!<CR>
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 
+
+filetype off
+call pathogen#runtime_append_all_bundles()
+filetype plugin indent on
+
+set nocompatible
+
+set modelines=0
+
 set encoding=utf-8
 set scrolloff=3
 set autoindent
