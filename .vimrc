@@ -105,3 +105,11 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 nnoremap <leader>v :tabedit $MYVIMRC<CR>
 nnoremap <leader>t :tabnew<CR>
+inoremap jj <ESC>
+" Bubble single lines
+nmap <C-Up> [e
+nmap <C-Down> ]e
+" Bubble multiple lines
+vmap <C-Up> [egv
+vmap <C-Down> ]egv
+
