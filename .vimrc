@@ -1,6 +1,11 @@
 set background=dark
 colorscheme ir_black
 set nocompatible 
+
+filetype off
+call pathogen#runtime_append_all_bundles()
+filetype plugin indent on
+
 syntax on
 
 " Set tabstop, softtabstop and shiftwidth to the same value
@@ -38,13 +43,6 @@ nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 
 map <F2> :NERDTreeToggle<CR>
-
-filetype off
-call pathogen#runtime_append_all_bundles()
-filetype plugin indent on
-
-set nocompatible
-
 set modelines=0
 
 set encoding=utf-8
@@ -63,6 +61,10 @@ set backspace=indent,eol,start
 set laststatus=2
 set relativenumber
 set undofile
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
 let mapleader = ","
 
 nnoremap / /\v
