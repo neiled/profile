@@ -67,6 +67,9 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 let mapleader = ","
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swp//
+
 
 nnoremap / /\v
 vnoremap / /\v
@@ -115,4 +118,8 @@ nmap <C-Down> ]e
 " Bubble multiple lines
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
+
+autocmd BufNewFile,BufRead *.feature,*.story  set ft=cucumber
+autocmd FileType cucumber :AcpDisable
+
 
