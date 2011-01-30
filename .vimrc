@@ -69,6 +69,7 @@ set expandtab
 let mapleader = ","
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swp//
+set undodir=~/.vim/undo//
 
 
 nnoremap / /\v
